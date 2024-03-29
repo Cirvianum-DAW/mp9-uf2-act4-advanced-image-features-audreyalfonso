@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" type="text/css">
+    <title>Exercise 3</title>
+  </head>
+  <header>
+    <nav>
+        <ul>
+		      <li><a href="/Ex1/basic_image.html">Exercise 1</a></li>
+		      <li><a href="/Ex2/basic_image.html">Exercise 2</a></li>
+		      <li><a href="/Ex3/resolution_switching.html">Exercise 3</a></l>
+          <li><a href="/Ex4/image_alignment.html">Exercise 4</a></li>
+		      <li><a href="/Ex5/image_alignment.html">Exercise 5</a></li>
+          <li><a href="/Ex6/image_gallery.html">Exercise 6</a></li>
+          <li><a href="/Ex7/figure_picture.html">Exercise 7</a></li>
+          <li><a href="/Ex8/figure_picture.html">Exercise 8</a></li>
+	      </ul>
+    </nav>
+  </header>
+  <body>
+    <h1 style="color: darkcyan; padding-top: 60px;">Resolution Switching - Modern Img Tags</h1>
+
+    <img srcset="/images/beach.jpg 120w,
+                 /images/beach.jpg 193w,
+                 /images/beach.jpg 278w"
+
+         sizes="(max-width: 710px) 120px,
+                (max-width: 991px) 193px,
+                278px"
+
+         alt="Image of the beach">
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" type="text/css">
+    <title>Exercise 8</title>
+  </head>
+  <header>
+    <nav>
+        <ul>
+		      <li><a href="/Ex1/basic_image.html">Exercise 1</a></li>
+		      <li><a href="/Ex2/basic_image.html">Exercise 2</a></li>
+		      <li><a href="/Ex3/resolution_switching.html">Exercise 3</a></l>
+		      <li><a href="/Ex4/image_alignment.html">Exercise 4</a></li>
+		      <li><a href="/Ex5/image_alignment.html">Exercise 5</a></li>
+          <li><a href="/Ex6/image_gallery.html">Exercise 6</a></li>
+          <li><a href="/Ex7/figure_picture.html">Exercise 7</a></li>
+          <li><a href="/Ex8/figure_picture.html">Exercise 8</a></li>
+	      </ul>
+    </nav>
+  </header>
+
+  <style>
+    img {
+      width: 300px;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    figure {
+      border: 1px solid #ccc;
+      padding: 10px;
+      display: inline-block;
+      margin: 10px;
+      text-align: center;
+    }
+    
+    figcaption {
+      font-style: italic;
+      color: #666;
+      margin-top: 5px;
+    }
+  </style>
+
+  <body>
+    <h1 style="color: darkcyan; padding-top: 60px;">Picture Elements</h1>
+
+    <figure>
+      <picture>
+          <!-- Source for small screens -->
+          <source media="(max-width: 768px)" srcset="/images/small_image.jpg">
+          <!-- Source for medium screens -->
+          <source media="(min-width: 769px) and (max-width: 1024px)" srcset="/images/medium_image.jpg">
+          <!-- Source for large screens -->
+          <source media="(min-width: 1025px)" srcset="/images/large_image.jpg">
+          <img src="large_image.jpg" alt="Image">
+      </picture>
+      <!-- Caption for the image -->
+      <figcaption>Very tenderness images.</figcaption>
+    </figure>
+    
+  </body>
+</html>
